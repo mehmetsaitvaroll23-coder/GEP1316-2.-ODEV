@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mehmet Sait Varol – kişisel portfolyo: projeler, hakkımda ve iletişim.">
+<title>Projeler | Mehmet Sait Varol Portfolyo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Mehmet Sait Varol</a>
+<div class="tools">
+<button id="theme-btn" type="button" aria-pressed="false">Karanlık mod</button>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="ana-menu">Menü</button>
+</div>
+<nav aria-label="Ana menü" id="ana-menu"><ul>
+<li><a href="index.html">Ana sayfa</a></li>
+<li><a href="hakkimda.html">Hakkımda</a></li>
+<li><a href="projeler.html" aria-current="page">Projeler</a></li>
+<li><a href="iletisim.html">İletişim</a></li>
+</ul></nav>
+</div></header>
+<main id="icerik"><div class="wrap">
+<h1>Projeler</h1>
+<p class="lead">Dönem boyunca yaptığım çalışmalar. Kategoriye göre filtreleyebilir veya arayabilirsiniz.</p>
+<div class="filters" role="group" aria-label="Kategori filtresi">
+<button type="button" data-filter="hepsi" aria-pressed="true">Hepsi</button>
+<button type="button" data-filter="web" aria-pressed="false">Web</button>
+<button type="button" data-filter="veri" aria-pressed="false">Veri</button>
+<button type="button" data-filter="tasarim" aria-pressed="false">Tasarım</button>
+</div>
+<label for="ara">Projelerde ara</label>
+<input id="ara" type="search" autocomplete="off">
+<p id="sonuc" role="status" aria-live="polite" class="note"></p>
+<div class="grid" id="proje-listesi">
+<article class="card" data-cat="veri"><img src="proje1.svg" alt="Algoritma ve sözde kod çalışmasının şematik görseli" width="400" height="240" loading="lazy"><div class="body"><h3>Algoritma ve sözde kod çalışması</h3><p>Problem çözme adımlarını ve başı-sonu belli mantığı sıralı ve koşullu yapılarla adım adım sözde kod olarak ifade ettiğim çalışma.</p><p class="learn"><strong>Ne öğrendim:</strong> Kodu yazmaya başlamadan önce mantıksal adımları netleştirmenin hataları en baştan azalttığını öğrendim.</p><a href="https://github.com/mehmetsaitvaroll23-coder">GitHub bağlantısı<span class="visually-hidden"> (Algoritma ve sözde kod çalışması)</span></a></div></article>
+<article class="card" data-cat="veri"><img src="proje2.svg" alt="Finansal türevler hesaplamalarının şematik görseli" width="400" height="240" loading="lazy"><div class="body"><h3>Finansal türevler ve ileri fiyatlama hesaplamaları</h3><p>Basit bileşik faize dayalı ileri (forward) fiyatlama ve marjin çağrısı senaryolarını sayısal parametrelerle incelediğim çalışma.</p><p class="learn"><strong>Ne öğrendim:</strong> Finansal formülleri farklı girdi değerleriyle test etmenin, varsayımların sonuca etkisini somutlaştırdığını öğrendim.</p><a href="https://github.com/mehmetsaitvaroll23-coder">GitHub bağlantısı<span class="visually-hidden"> (Finansal türevler ve ileri fiyatlama hesaplamaları)</span></a></div></article>
+<article class="card" data-cat="web"><img src="proje3.svg" alt="Anlamsal HTML sayfa yapısının şematik görseli" width="400" height="240" loading="lazy"><div class="body"><h3>Temel HTML ve anlamsal sayfa yapısı uygulaması</h3><p>Web sayfalarını başlık, paragraf, liste ve anlamsal etiketlerle düzenli bir hiyerarşi içinde yapılandırdığım çalışma.</p><p class="learn"><strong>Ne öğrendim:</strong> Doğru HTML etiketi seçiminin hem kodun okunabilirliğini hem de sayfanın erişilebilirliğini doğrudan etkilediğini öğrendim.</p><a href="https://github.com/mehmetsaitvaroll23-coder">GitHub bağlantısı<span class="visually-hidden"> (Temel HTML ve anlamsal sayfa yapısı uygulaması)</span></a></div></article>
+<article class="card" data-cat="tasarim"><img src="proje4.svg" alt="Duyarlı CSS tasarımının şematik görseli" width="400" height="240" loading="lazy"><div class="body"><h3>CSS düzeni ve duyarlı (responsive) tasarım çalışması</h3><p>Farklı ekran genişliklerinde içeriklerin taşmadan ve dengeli hizalanmasını sağlayan stil ve kırılma noktası düzenlemelerini yaptığım çalışma.</p><p class="learn"><strong>Ne öğrendim:</strong> Tasarımı yalnızca tek bir ekran boyutuna göre değil, mobil, tablet ve masaüstü geçişlerini düşünerek kurgulamak gerektiğini öğrendim.</p><a href="https://github.com/mehmetsaitvaroll23-coder/GEP1316-2.-ARA-DE-ERLEND-RME-DEV-">GitHub bağlantısı<span class="visually-hidden"> (CSS düzeni ve duyarlı (responsive) tasarım çalışması)</span></a></div></article>
+</div>
+</div></main>
+<footer><div class="wrap">
+<p>© <span id="yil">2026</span> Mehmet Sait Varol. Bu sitede izleyici veya üçüncü taraf betik kullanılmaz; yazı tipleri cihazınızdan gelir. Karanlık mod tercihiniz yalnızca kendi tarayıcınızda (localStorage) saklanır.</p>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

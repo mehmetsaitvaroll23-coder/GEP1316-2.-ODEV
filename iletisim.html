@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mehmet Sait Varol – kişisel portfolyo: projeler, hakkımda ve iletişim.">
+<title>İletişim | Mehmet Sait Varol Portfolyo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header><div class="wrap bar">
+<a class="logo" href="index.html">Mehmet Sait Varol</a>
+<div class="tools">
+<button id="theme-btn" type="button" aria-pressed="false">Karanlık mod</button>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="ana-menu">Menü</button>
+</div>
+<nav aria-label="Ana menü" id="ana-menu"><ul>
+<li><a href="index.html">Ana sayfa</a></li>
+<li><a href="hakkimda.html">Hakkımda</a></li>
+<li><a href="projeler.html">Projeler</a></li>
+<li><a href="iletisim.html" aria-current="page">İletişim</a></li>
+</ul></nav>
+</div></header>
+<main id="icerik"><div class="wrap">
+<h1>İletişim</h1>
+<p class="lead">Staj, iş birliği veya geri bildirim için yazabilirsiniz.</p>
+<form id="iletisim-formu" novalidate>
+<label for="ad">Adınız</label>
+<input id="ad" name="ad" type="text" autocomplete="name" aria-describedby="ad-hata" required>
+<p class="error" id="ad-hata"></p>
+<label for="eposta">E-posta adresiniz</label>
+<input id="eposta" name="eposta" type="email" autocomplete="email" aria-describedby="eposta-hata" required>
+<p class="error" id="eposta-hata"></p>
+<label for="mesaj">Mesajınız</label>
+<textarea id="mesaj" name="mesaj" rows="5" aria-describedby="mesaj-hata" required></textarea>
+<p class="error" id="mesaj-hata"></p>
+<button class="primary" type="submit">Mesajı gönder</button>
+<p id="feedback" role="status" hidden></p>
+<p class="note">Aydınlatma: Bu form yalnızca adınızı, e-posta adresinizi ve mesajınızı doğrulamak için kullanır. Veriler tarayıcınızda kalır, kaydedilmez ve üçüncü kişilere iletilmez.</p>
+</form>
+<h2>Bağlantılar</h2>
+<ul class="plain">
+<li><a href="https://github.com/mehmetsaitvaroll23-coder">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/mehmet-sait-varol-51333b29b/">LinkedIn</a></li>
+</ul>
+</div></main>
+<footer><div class="wrap">
+<p>© <span id="yil">2026</span> Mehmet Sait Varol. Bu sitede izleyici veya üçüncü taraf betik kullanılmaz; yazı tipleri cihazınızdan gelir. Karanlık mod tercihiniz yalnızca kendi tarayıcınızda (localStorage) saklanır.</p>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
